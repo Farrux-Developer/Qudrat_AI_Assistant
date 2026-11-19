@@ -4,3 +4,4 @@ anthropic
 google-genai
 Pillow
 python-dotenv
+beautifulsoup4

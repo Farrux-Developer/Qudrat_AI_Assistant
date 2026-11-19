@@ -1,0 +1,13 @@
+git reset --soft HEAD~1
+git reset HEAD .env bot_data.pkl __pycache__/
+cat << 'EOF' > .gitignore
+.env
+bot_data.pkl
+__pycache__/
+*.pyc
+.venv/
+venv/
+EOF
+git add .gitignore bot.py requirements.txt run.bat
+git commit -m "Add bot files and .gitignore"
+git push -u origin main
